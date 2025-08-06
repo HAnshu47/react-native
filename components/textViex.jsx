@@ -2,13 +2,13 @@
 import { StyleSheet, useColorScheme, View, Text } from 'react-native';
 import { Colors } from '../assets/color/color';
 
-const TextView = ({ style,...props }) => {
+const TextView = ({ style = {}, ...props }) => {
   const colorScheme = useColorScheme();
   const theme = Colors[colorScheme] ?? Colors.light;
 
   return (
-    <View style={[{backgroundColor:theme.text},styles.container, style,]} {...props}>
-     
+    <View style={[{ backgroundColor: theme.text }, styles.container, style,]} {...props}>
+
     </View>
   );
 };

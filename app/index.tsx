@@ -19,7 +19,7 @@ export default function index() {
       <View style={styles.cards}>
         <Text>card</Text>
       </View>
-      <Link href="/demo">jump</Link>
+      <Link href="/login">jump</Link>
     </View>
 
   );
