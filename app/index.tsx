@@ -1,17 +1,20 @@
 import { StyleSheet, Text, View, Image } from 'react-native';
 import img from '../assets/img/adaptive-icon.png'
 import { Link } from 'expo-router';
+import TextView from '../components/textViex'
 
 export default function index() {
 
   return (
 
     <View style={styles.container}>
-      {/* <Image source={{ uri:'http://gips0.baidu.com/it/u=1690853528,2506870245&fm=3028&app=3028&f=JPEG&fmt=auto?w=1024&h=1024'}}></Image> */}
       <Image source={img} style={styles.img}></Image>
       <Text style={styles.title}>123</Text>
       <Text style={{ marginTop: 20 }}>123</Text>
-      <Text>123</Text>
+      
+      <TextView >
+        <Text>123</Text>    
+      </TextView>
 
       <View style={styles.cards}>
         <Text>card</Text>
@@ -32,7 +35,6 @@ const styles = StyleSheet.create({
     fontSize: 20
   },
   cards: {
-    backgroundColor: 'blue',
     padding: 10,
     borderRadius: 10,
     // width:'100%'
