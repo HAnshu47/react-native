@@ -16,6 +16,7 @@ export default function index() {
 
      
       <Link href="/login" style={styles.link}>Login</Link>
+      <Link href="/demo" style={styles.link}>Demo</Link>
       <Link href="/text" style={styles.link}>text</Link>
     </View>
 

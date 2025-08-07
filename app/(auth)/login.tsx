@@ -1,19 +1,18 @@
-import { StyleSheet, Text, View, Pressable } from 'react-native';
+import { StyleSheet, Text, SafeAreaView } from 'react-native';
 import PressableCom from '../../components/pressableCom';
+import ViewCom from '../../components/viewCom';
 export default function index() {
 
-const handlePress = () => {
-  console.log('Pressed');
-};
+  const handlePress = () => {
+    console.log('Pressed');
+  };
   return (
-
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-
+    <ViewCom safe={true}>
       <PressableCom onPress={handlePress}>
         <Text style={{ color: '#fff' }}>Logins</Text>
       </PressableCom>
 
-    </View>
+    </ViewCom>
   );
 }
 const styles = StyleSheet.create({});
