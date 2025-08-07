@@ -24,6 +24,7 @@ const ViewCom = ({ style = {}, safe = false, ...props }) => {
   if (safe) return (
     <View style={[styles.insetContainer,styles.container, style]} {...props} >
       {/* 内容 */}
+      
     </View>
   )
   return (
