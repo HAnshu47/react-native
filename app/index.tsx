@@ -9,17 +9,14 @@ export default function index() {
 
     <View style={styles.container}>
       <Image source={img} style={styles.img}></Image>
-      <Text style={styles.title}>123</Text>
-      <Text style={{ marginTop: 20 }}>123</Text>
       
       <TextView >
-        <Text>123</Text>    
+        <Text>textview</Text>    
       </TextView>
 
-      <View style={styles.cards}>
-        <Text>card</Text>
-      </View>
-      <Link href="/login">jump</Link>
+     
+      <Link href="/login" style={styles.link}>Login</Link>
+      <Link href="/text" style={styles.link}>text</Link>
     </View>
 
   );
@@ -43,5 +40,10 @@ const styles = StyleSheet.create({
     width: 100,
     height: 100,
     marginVertical: 10,
-  }
+  },
+  link: {
+    color: 'blue',
+    textDecorationLine: 'underline',
+    marginTop: 10,
+  },
 }); //样式表

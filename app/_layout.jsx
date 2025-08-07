@@ -18,9 +18,9 @@ export default function _layout() {
         <Stack.Screen name="index" options={{ title: 'Home' }} />
         <Stack.Screen name="demo" options={{ title: '第二个页面' }} />
         <Stack.Screen name="(auth)" options={{ headerShown: false }}/>
+        <Stack.Screen name="(dashboard)" options={{ headerShown: false }}/>
 
         </Stack>  
-      <Text>_layout</Text>
     </View>
   )
 }
